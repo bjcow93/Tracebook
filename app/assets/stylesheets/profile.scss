@@ -1,0 +1,423 @@
+.page {
+  width: 85%;
+  margin-left: 15%;
+}
+
+.main_info {
+  width: 343px;
+}
+
+.main_lower_content {
+  display: flex;
+  flex-direction: row;
+}
+
+.cover_photo_hover {
+  width: 815px;
+  height: 315px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.cover_photo {
+  background-repeat: no-repeat;
+  position: relative;
+  width: 852px;
+  height: 315px;
+}
+
+.cover_photo_pers {
+  background-repeat: no-repeat;
+  background-color: gray;
+  position: absolute;
+  width: 852px;
+  overflow: hidden;
+  height: 315px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  border-left: 1px solid rgba(0, 0, 0, .2);
+  border-right: 1px solid rgba(0, 0, 0, .2);
+}
+
+.hover_profile_pic {
+  height: 168px;
+  width: 168px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile_pic {
+  background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 168px;
+  width: 168px;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+}
+
+.update_cov {
+  position: absolute;
+  font-size: 12px;
+  color: #BEC0BC;
+  border: 1px solid #BEC0BC;
+  border-radius: 2px;
+  margin-top: 80px;
+  margin-left: 40px;
+  padding: 10px;
+  display: none;
+}
+
+.current_user_update_cov {
+  margin-top: 50px;
+  position: absolute;
+  font-size: 12px;
+  color: #BEC0BC;
+  border: 1px solid #BEC0BC;
+  border-radius: 2px;
+  margin-left: 40px;
+  padding: 10px;
+  display: none;
+}
+ 
+
+.cover_photo_hover:hover .update_cov {
+  display: inline-block;
+  z-index: 3;
+  background-color: rgba(0,0,0,0.7); 
+}
+
+.update_pro {
+  display: none;
+  box-sizing: border-box;
+  padding-top: 70px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.hover_profile_pic:hover {
+  z-index: 3;
+  background-color: rgba(0,0,0,0.5); 
+}
+
+.hover_profile_pic:hover .update_pro {
+  color: #BEC0BC;
+  display: block;
+}
+
+.profile_pic_border, .current_user_profile_pic_border {
+  background-color: white;
+  height: 178px;
+  width: 178px;
+  position: relative;
+  left: 18px;
+  border-radius: 50%;
+  border: 1px solid #D9D9D9;
+}
+
+.profile_pic_border {
+  top: 70px;
+}
+
+.current_user_profile_pic_border {
+  top: 52px;
+}
+
+.user_name {
+  position: relative;
+  color: white;
+  text-shadow: 0px 0px 3px black;
+  left: 220px;
+  top: 225px;
+  width: 520px;
+  font-weight: normal;
+}
+
+.current_user_name {
+  position: relative;
+  color: white;
+  text-shadow: 0px 0px 3px black;
+  left: 220px;
+  top: 209px;
+  font-weight: normal;
+}
+
+.profile_nav {
+  display: flex;
+  flex-direction: row;
+  height: 43px;
+  padding-left: 430px;
+  background-color: white;
+  width: 421.5px;
+  border: 1px solid #D3D6DB;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.profile_nav_button {
+  color: #385A97;
+  background-color: white;
+  font-size: 16px;
+  padding-top: 14px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-left: 1px solid #E9EAED;
+  border-right: 1px solid #E9EAED;
+}
+
+.profile_nav_button:hover {
+  background-color: #F5F6F7;
+}
+
+.intro, .photos, .friends, .answers, .language {
+  width: auto;
+  height: auto;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #DDDFE2;
+  margin-top: 12px;
+}
+
+.intro, .photos, .answers, h3 {
+  color: black;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.intro_icon, .photo_icon, .answers_icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  padding-right: 10px;
+}
+
+.friends_icon {
+  margin-left: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  padding-right: 10px;
+}
+
+.intro_icon {
+  background-image: image-url('intro_icon.png');
+}
+
+.photo_icon {
+  background-image: image-url('photos_icon.png');
+}
+
+.friends_icon {
+  background-image: image-url('friends_icon.png');
+}
+
+.answers_icon {
+  background-image: image-url('answers_icon.png');
+}
+
+.answer_link {
+  font-size: 12px;
+  color: #385A97;
+  padding-left: 85px;
+}
+
+.answer_link:hover {
+  text-decoration: underline;
+}
+
+.answers {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.language, p {
+  font-size: 12px;
+  padding-left: 20px;
+  line-height: 15px;
+}
+
+.language {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.lang_link {
+  font-size: 12px;
+  color: #385A97;
+}
+
+.legal {
+  font-size: 12px;
+  color: #90949C;
+  width: 321px;
+  height: auto;
+  margin-top: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.legal, p {
+  line-height: 18px;
+}
+
+.fb_legal {
+  color: #616770;
+}
+
+.user_info_item, li {
+  font-size: 12px;
+  line-height: 16px;
+  color: #1D2128;
+}
+
+.custom_info {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.user_info_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.birthday_icon, .job_icon, .location_icon, .relationship_icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 22px;
+  width: 22px;
+  padding-right: 10px;
+}
+
+.birthday_icon {
+  background-image: image-url('birthday.png');
+}
+
+.job_icon {
+  background-image: image-url('work.png');
+}
+
+.location_icon {
+  background-image: image-url('location.png');
+}
+
+.relationship_icon {
+  background-image: image-url('relationship.png');
+  height: 19px;
+  width: 19px;
+  padding-left: 3px;
+}
+
+.file_picker {
+  visibility: hidden;
+  width: 1px; 
+  height: 1px;
+}
+
+.friends {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding-top: 20px;
+  width: 341px;
+}
+
+.friend_window {
+  width: 101px;
+  height: 101px;
+  list-style: none;
+  padding: 2px;
+  position: relative;
+}
+
+.friend_pic {
+  width: 101px;
+  height: 101px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.grid {
+  width: 318px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.friend_name {
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  text-shadow: 0px 0px 5px #1D2128;
+  bottom: 5px;
+  left: 5px;
+  z-index: 5;
+}
+
+.link {
+  z-index: 100;
+}
+
+.main_friend_button {
+  position: absolute;
+  right: 0px;
+  bottom: 15px;
+  height: 28px;
+  margin-right: 20px;
+  background-color: #F5F6F7;
+  border: 1px solid #161608;
+  color: #4B4F56;
+  border-radius: 2px;
+  font-family: "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-weight: bold;
+  font-size: 12px;
+  width: auto;
+  z-index: 10;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main_friend_button p {
+  font-size: 12px;
+  padding: 5px 10px 5px 10px;
+}
+
+.friend_check_icon {
+  background-image: image-url('check.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 19px;
+  width: 19px;
+  margin-left: 10px;
+}
+
+.friend_head_icon {
+  background-image: image-url('head.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 19px;
+  width: 19px;
+  margin-left: 10px;
+}
