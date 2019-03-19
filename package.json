@@ -32,19 +32,11 @@
     "postinstall": "webpack",
     "webpack": "webpack --mode=development --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TheoObbard/facebook_clone.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TheoObbard/facebook_clone/issues"
-  },
-  "homepage": "https://github.com/TheoObbard/facebook_clone#readme",
   "engines": {
-    "node": "8.11.4",
+    "node": "10.13.0",
     "npm": "6.4.1"
   }
 }
