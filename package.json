@@ -1,5 +1,5 @@
 {
-  "name": "facebook",
+  "name": "tracebook",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.2.0",
@@ -29,7 +29,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "webpack"
+    "postinstall": "webpack",
+    "webpack": "webpack --mode=development --watch"
   },
   "repository": {
     "type": "git",
