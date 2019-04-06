@@ -12,7 +12,7 @@ export const receiveComment = (payload) => {
   return {
     type: RECEIVE_COMMENT, 
     payload
-  }
+  };
 };
 
 export const fetchComments = (postId) => dispatch => {
