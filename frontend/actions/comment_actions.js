@@ -23,12 +23,12 @@ export const fetchComments = (postId) => dispatch => {
         resolve(payload.comments);
       })
     }
-  )
+  );
 };
 
 export const receiveComments = (payload) => {
   return {
     type: RECEIVE_COMMENTS,
     payload
-  }
+  };
 };
