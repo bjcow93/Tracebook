@@ -5,7 +5,7 @@ export const RECEIVE_COMMENTS = 'RECEIVE_COMMENTS';
 export const addComment = (comment, postId) => dispatch => {
   return CommentsApiUtil.addComment(comment, postId).then(
     (comment) => dispatch(receiveComment(comment))
-  )
+  );
 };
 
 export const receiveComment = (payload) => {
