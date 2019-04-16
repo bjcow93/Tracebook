@@ -25,7 +25,7 @@ class Search extends React.Component {
   cleanSearch() {
     this.setState({
       search: ''
-    })
+    });
   }
 
   searchDropDown() {

@@ -9,6 +9,17 @@
 User.destroy_all
 
 User.create(
+  email: 'ben', 
+  name: 'Ben Cowden', 
+  password: 'password', 
+  birthday: Date.new(1993, 9, 23), 
+  gender: 'Male', 
+  job: 'Software Engineer', 
+  relationship_stat: 'Single', 
+  location: 'San Francisco, CA', 
+)
+
+User.create(
   email: 'theo', 
   name: 'Theo Obbard', 
   password: 'password', 
